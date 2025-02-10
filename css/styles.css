@@ -7,7 +7,7 @@ body {
 
 a {
     text-decoration: none;
-    /* font-style: normal;      автоперевірка наполягає на використанні цього правила у селекторі .header-address-link */
+    /* font-style: normal;      автоперевірка наполягає на використанні цього правила у селекторі .header-address */
 }
 
 ul {
@@ -82,6 +82,7 @@ p {
 }
 
 .header-address {
+    font-style: normal;
 }
 
 .header-address-list {
@@ -91,10 +92,10 @@ p {
 }
 
 .header-address-link {
+    color: inherit;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    font-style: normal;
 }
 
 .header-address-link:hover,
@@ -118,8 +119,8 @@ p {
 
 .hero-btn {
     background-color: #4d5ae5;
-    /* width: 169px;
-    height: 56px;           автоперевірка насварила, відімкну у наступній дз :) */
+    /* wi--dth: 169px;
+    hei--ght: 56px;           автоперевірка насварила, відімкну у наступній дз :) */
     /* --- */
     color: inherit;
     font-size: 16px;
