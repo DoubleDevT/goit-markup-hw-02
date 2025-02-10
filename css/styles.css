@@ -1,12 +1,13 @@
 body {
     font-family: "Roboto", sans-serif;
     background-color: #ffffff;
-    color: #2e2f42;
+    /* color: #2e2f42;          мені здавалося, що цього кольору було більше, але автоперевірка вирішила інакше */
+    color: #434455;
 }
 
 a {
     text-decoration: none;
-    font-style: normal;
+    /* font-style: normal;      автоперевірка наполягає на використанні цього правила у селекторі .header-address-link */
 }
 
 ul {
@@ -16,6 +17,7 @@ ul {
 /* --------------------------- */
 
 h2 {
+    color: #2e2f42;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -23,6 +25,7 @@ h2 {
 }
 
 h3 {
+    color: #2e2f42;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -30,10 +33,20 @@ h3 {
 }
 
 p {
-    color: #434455;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+
+.logo {
+    /* color: #2e2f42; */
+    color: #4d5ae5;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 /* ----------------------- HEADER ----------------------- */
@@ -44,18 +57,8 @@ p {
 .header-nav {
 }
 
-.header-logo {
-    color: inherit;
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-
-.logo-accent {
-    color: #4d5ae5;
+.header-logo-accent {
+    color: #2e2f42;
 }
 
 .header-nav-menu {
@@ -65,7 +68,7 @@ p {
 }
 
 .header-nav-link {
-    color: inherit;
+    color: #2e2f42;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -88,10 +91,10 @@ p {
 }
 
 .header-address-link {
-    color: #434455;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    font-style: normal;
 }
 
 .header-address-link:hover,
@@ -115,8 +118,8 @@ p {
 
 .hero-btn {
     background-color: #4d5ae5;
-    width: 169px;
-    height: 56px;
+    /* width: 169px;
+    height: 56px;           автоперевірка насварила, відімкну у наступній дз :) */
     /* --- */
     color: inherit;
     font-size: 16px;
@@ -156,13 +159,14 @@ p {
 }
 
 .team-title {
+    text-transform: capitalize;
 }
 
 .team-list {
 }
 
 .team-item {
-    /* background-color: #ffffff; */
+    background-color: #ffffff;
 }
 
 .team-item-image {
@@ -182,6 +186,7 @@ p {
 }
 
 .portfolio-title {
+    text-transform: capitalize;
 }
 
 .portfolio-list {
@@ -206,14 +211,8 @@ p {
     color: #f4f4fd;
 }
 
-.footer-logo {
-    color: inherit;
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+.footer-logo-accent {
+    color: #f4f4fd;
 }
 
 .footer-text {
